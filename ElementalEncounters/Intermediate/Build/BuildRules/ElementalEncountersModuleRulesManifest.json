@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"D:\\UE 5 Release\\Project\\Elemental-Encounters\\ElementalEncounters\\Source\\ElementalEncounters\\ElementalEncounters.Build.cs",
-		"D:\\UE 5 Release\\Project\\Elemental-Encounters\\ElementalEncounters\\Source\\ElementalEncounters.Target.cs",
-		"D:\\UE 5 Release\\Project\\Elemental-Encounters\\ElementalEncounters\\Source\\ElementalEncountersEditor.Target.cs"
-	],
-	"EngineVersion": "5.2.1"
-}
