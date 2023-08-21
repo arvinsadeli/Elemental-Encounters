@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ElementalEncounters",
+			"Path": "D:\\UE 5 Release\\Project\\Elemental-Encounters\\ElementalEncounters\\Source\\ElementalEncounters.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ElementalEncountersEditor",
+			"Path": "D:\\UE 5 Release\\Project\\Elemental-Encounters\\ElementalEncounters\\Source\\ElementalEncountersEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
