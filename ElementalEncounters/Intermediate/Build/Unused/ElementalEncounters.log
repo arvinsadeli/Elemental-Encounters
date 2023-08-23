@@ -1,0 +1,6 @@
+﻿  Using bundled DotNet SDK version: 6.0.302
+  Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" ElementalEncountersEditor Win64 Development -Project="D:\UE 5 Release\Project\Elemental-Encounters\ElementalEncounters\ElementalEncounters.uproject" -WaitMutex -FromMsBuild
+  Log file: C:\Users\arvin\AppData\Local\UnrealBuildTool\Log.txt
+  Using 'git status' to determine working set for adaptive non-unity build (D:\UE 5 Release\Project\Elemental-Encounters).
+  Target is up to date
+  Total execution time: 0.78 seconds

@@ -1,18 +1,17 @@
 "D:\UE 5 Release\Project\Elemental-Encounters\ElementalEncounters\Source\ElementalEncounters\ElementalEncountersCharacter.cpp"
 /I .
-/I "D:\UE 5 Release\Project\Elemental-Encounters\ElementalEncounters\Intermediate\Build\Win64\UnrealEditor\Inc\ElementalEncounters\UHT"
-/I "D:\UE 5 Release\Project\Elemental-Encounters\ElementalEncounters\Source"
-/I Runtime\TraceLog\Public
-/I Runtime\Core\Public
-/I Runtime
-/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\UHT
-/I Runtime\CoreUObject\Public
+/I "D:\UE 5 Release\Project\Elemental-Encounters\ElementalEncounters\Source\ElementalEncounters\Private"
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\UHT
 /I ..\Shaders\Shared
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
+/I Runtime
+/I Runtime\TraceLog\Public
+/I Runtime\Core\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreOnline\UHT
 /I Runtime\CoreOnline\Public
+/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\UHT
+/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\NetCore\UHT
 /I Runtime\Net\Core\Classes
 /I Runtime\Net\Core\Public
@@ -274,6 +273,9 @@
 /I Runtime\MovieSceneCapture\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController\UHT
 /I Developer\AnimationDataController\Public
+/I "D:\UE 5 Release\Project\Elemental-Encounters\ElementalEncounters\Intermediate\Build\Win64\UnrealEditor\Inc\ElementalEncounters\UHT"
+/I "D:\UE 5 Release\Project\Elemental-Encounters\ElementalEncounters\Source"
+/I "D:\UE 5 Release\Project\Elemental-Encounters\ElementalEncounters\Source\ElementalEncounters\Public"
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AugmentedReality\UHT
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\MRMesh\UHT

@@ -63,13 +63,22 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
+	UPROPERTY(BlueprintReadWrite, Category = "Status")
+	int currentX;
+	UPROPERTY(BlueprintReadWrite, Category = "Status")
+	int currentY;
 
-public:
-	UPROPERTY(EditAnywhere)
-	int xGridPosition;
 
-	UPROPERTY(EditAnywhere)
-	int yGridPosition;
-}
-;
+
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Status")
+	float maxHealth;
+	UPROPERTY(BlueprintReadWrite, Category = "Status")
+	float currentHealth;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Status")
+	float damage;
+
+
+	void SetStatus();
+};
 

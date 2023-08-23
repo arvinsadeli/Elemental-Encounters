@@ -9,6 +9,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "Engine/Engine.h"
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -55,7 +56,8 @@ void AElementalEncountersCharacter::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
-
+	SetStatus();
+	
 	//Add Input Mapping Context
 	if (APlayerController* PlayerController = Cast<APlayerController>(Controller))
 	{
@@ -64,6 +66,11 @@ void AElementalEncountersCharacter::BeginPlay()
 			Subsystem->AddMappingContext(DefaultMappingContext, 0);
 		}
 	}
+}
+
+void AElementalEncountersCharacter::SetStatus()
+{
+	currentHealth = maxHealth;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -93,6 +100,31 @@ void AElementalEncountersCharacter::Move(const FInputActionValue& Value)
 	// input is a Vector2D
 	FVector2D MovementVector = Value.Get<FVector2D>();
 
+	/*
+	FString DebugMessage = "x: " + FString::SanitizeFloat(MovementVector.X) + " y: " + FString::SanitizeFloat(MovementVector.Y);
+	GEngine->AddOnScreenDebugMessage(1, 3, FColor::Red, DebugMessage);
+
+	if (MovementVector.X == 1)
+	{
+		GEngine->AddOnScreenDebugMessage(1, 3, FColor::Red, TEXT("MovementX = 1"));
+		FVector targetMovement = FVector(GetActorLocation().X+5, GetActorLocation().Y, GetActorLocation().Z);
+		SetActorLocation(targetMovement, true, nullptr, ETeleportType::TeleportPhysics);
+	}
+	else if (MovementVector.X == -1)
+	{
+		GEngine->AddOnScreenDebugMessage(1, 3, FColor::Red, TEXT("MovementX = -1"));
+	}
+	else if (MovementVector.Y == 1)
+	{
+		GEngine->AddOnScreenDebugMessage(1, 3, FColor::Red, TEXT("MovementY = 1"));
+	}
+	else if (MovementVector.Y == -1)
+	{
+		GEngine->AddOnScreenDebugMessage(1, 3, FColor::Red, TEXT("MovementY = -1"));
+	}*/
+
+
+	/*
 	if (Controller != nullptr)
 	{
 		// find out which way is forward
@@ -108,7 +140,7 @@ void AElementalEncountersCharacter::Move(const FInputActionValue& Value)
 		// add movement 
 		AddMovementInput(ForwardDirection, MovementVector.Y);
 		AddMovementInput(RightDirection, MovementVector.X);
-	}
+	}*/
 }
 
 void AElementalEncountersCharacter::Look(const FInputActionValue& Value)
@@ -123,6 +155,8 @@ void AElementalEncountersCharacter::Look(const FInputActionValue& Value)
 		AddControllerPitchInput(LookAxisVector.Y);
 	}
 }
+
+
 
 
 

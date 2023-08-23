@@ -57,13 +57,25 @@ void EmptyLinkFunctionForGeneratedCodeElementalEncountersCharacter() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_xGridPosition_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_currentX_MetaData[];
 #endif
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_xGridPosition;
+		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_currentX;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_yGridPosition_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_currentY_MetaData[];
 #endif
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_yGridPosition;
+		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_currentY;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_maxHealth_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_maxHealth;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_currentHealth_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_currentHealth;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_damage_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_damage;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -142,19 +154,40 @@ void EmptyLinkFunctionForGeneratedCodeElementalEncountersCharacter() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AElementalEncountersCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_LookAction_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_LookAction_MetaData)) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_xGridPosition_MetaData[] = {
-		{ "Category", "ElementalEncountersCharacter" },
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentX_MetaData[] = {
+		{ "Category", "Status" },
 		{ "ModuleRelativePath", "ElementalEncountersCharacter.h" },
 	};
 #endif
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_xGridPosition = { "xGridPosition", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AElementalEncountersCharacter, xGridPosition), METADATA_PARAMS(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_xGridPosition_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_xGridPosition_MetaData)) };
+	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentX = { "currentX", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AElementalEncountersCharacter, currentX), METADATA_PARAMS(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentX_MetaData)) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_yGridPosition_MetaData[] = {
-		{ "Category", "ElementalEncountersCharacter" },
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentY_MetaData[] = {
+		{ "Category", "Status" },
 		{ "ModuleRelativePath", "ElementalEncountersCharacter.h" },
 	};
 #endif
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_yGridPosition = { "yGridPosition", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AElementalEncountersCharacter, yGridPosition), METADATA_PARAMS(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_yGridPosition_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_yGridPosition_MetaData)) };
+	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentY = { "currentY", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AElementalEncountersCharacter, currentY), METADATA_PARAMS(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentY_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentY_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_maxHealth_MetaData[] = {
+		{ "Category", "Status" },
+		{ "ModuleRelativePath", "ElementalEncountersCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_maxHealth = { "maxHealth", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AElementalEncountersCharacter, maxHealth), METADATA_PARAMS(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_maxHealth_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_maxHealth_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentHealth_MetaData[] = {
+		{ "Category", "Status" },
+		{ "ModuleRelativePath", "ElementalEncountersCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentHealth = { "currentHealth", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AElementalEncountersCharacter, currentHealth), METADATA_PARAMS(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentHealth_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentHealth_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_damage_MetaData[] = {
+		{ "Category", "Status" },
+		{ "ModuleRelativePath", "ElementalEncountersCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_damage = { "damage", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AElementalEncountersCharacter, damage), METADATA_PARAMS(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_damage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_damage_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AElementalEncountersCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_CameraBoom,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_FollowCamera,
@@ -162,8 +195,11 @@ void EmptyLinkFunctionForGeneratedCodeElementalEncountersCharacter() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_JumpAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_MoveAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_LookAction,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_xGridPosition,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_yGridPosition,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentX,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentY,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_maxHealth,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentHealth,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_damage,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AElementalEncountersCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AElementalEncountersCharacter>::IsAbstract,
@@ -202,9 +238,9 @@ void EmptyLinkFunctionForGeneratedCodeElementalEncountersCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_ElementalEncountersCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AElementalEncountersCharacter, AElementalEncountersCharacter::StaticClass, TEXT("AElementalEncountersCharacter"), &Z_Registration_Info_UClass_AElementalEncountersCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AElementalEncountersCharacter), 690773533U) },
+		{ Z_Construct_UClass_AElementalEncountersCharacter, AElementalEncountersCharacter::StaticClass, TEXT("AElementalEncountersCharacter"), &Z_Registration_Info_UClass_AElementalEncountersCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AElementalEncountersCharacter), 4208511919U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_ElementalEncountersCharacter_h_2311351627(TEXT("/Script/ElementalEncounters"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_ElementalEncountersCharacter_h_1790780011(TEXT("/Script/ElementalEncounters"),
 		Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_ElementalEncountersCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_ElementalEncountersCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

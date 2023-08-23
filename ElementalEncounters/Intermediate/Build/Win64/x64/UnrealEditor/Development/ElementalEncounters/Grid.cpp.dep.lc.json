@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ue 5 release\\project\\elemental-encounters\\elementalencounters\\source\\elementalencounters\\private\\grid.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ue 5 release\\project\\elemental-encounters\\elementalencounters\\intermediate\\build\\win64\\x64\\elementalencounterseditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_1.h.pch",
+        "Includes": [
+            "d:\\ue 5 release\\project\\elemental-encounters\\elementalencounters\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\elementalencounters\\definitions.elementalencounters.h",
+            "d:\\ue 5 release\\project\\elemental-encounters\\elementalencounters\\source\\elementalencounters\\public\\grid.h",
+            "d:\\ue 5 release\\project\\elemental-encounters\\elementalencounters\\intermediate\\build\\win64\\unrealeditor\\inc\\elementalencounters\\uht\\grid.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
