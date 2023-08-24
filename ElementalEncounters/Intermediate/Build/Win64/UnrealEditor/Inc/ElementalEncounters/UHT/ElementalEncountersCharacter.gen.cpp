@@ -85,9 +85,9 @@ void EmptyLinkFunctionForGeneratedCodeElementalEncountersCharacter() {}
 #endif
 		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_currentAttackRange;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_ammoTurn_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_currentAmmoTurn_MetaData[];
 #endif
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_ammoTurn;
+		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_currentAmmoTurn;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_fireAmmo_MetaData[];
 #endif
@@ -272,12 +272,12 @@ void EmptyLinkFunctionForGeneratedCodeElementalEncountersCharacter() {}
 #endif
 	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentAttackRange = { "currentAttackRange", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AElementalEncountersCharacter, currentAttackRange), METADATA_PARAMS(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentAttackRange_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentAttackRange_MetaData)) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_ammoTurn_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentAmmoTurn_MetaData[] = {
 		{ "Category", "Current" },
 		{ "ModuleRelativePath", "ElementalEncountersCharacter.h" },
 	};
 #endif
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_ammoTurn = { "ammoTurn", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AElementalEncountersCharacter, ammoTurn), METADATA_PARAMS(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_ammoTurn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_ammoTurn_MetaData)) };
+	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentAmmoTurn = { "currentAmmoTurn", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AElementalEncountersCharacter, currentAmmoTurn), METADATA_PARAMS(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentAmmoTurn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentAmmoTurn_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_fireAmmo_MetaData[] = {
 		{ "Category", "Status" },
@@ -391,7 +391,7 @@ void EmptyLinkFunctionForGeneratedCodeElementalEncountersCharacter() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_damage,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentElement1Fire2Air3Earth4Water5Light6Dark,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentAttackRange,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_ammoTurn,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_currentAmmoTurn,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_fireAmmo,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_airAmmo,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AElementalEncountersCharacter_Statics::NewProp_earthAmmo,
@@ -445,9 +445,9 @@ void EmptyLinkFunctionForGeneratedCodeElementalEncountersCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_ElementalEncountersCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AElementalEncountersCharacter, AElementalEncountersCharacter::StaticClass, TEXT("AElementalEncountersCharacter"), &Z_Registration_Info_UClass_AElementalEncountersCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AElementalEncountersCharacter), 1690296327U) },
+		{ Z_Construct_UClass_AElementalEncountersCharacter, AElementalEncountersCharacter::StaticClass, TEXT("AElementalEncountersCharacter"), &Z_Registration_Info_UClass_AElementalEncountersCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AElementalEncountersCharacter), 2847467066U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_ElementalEncountersCharacter_h_744796589(TEXT("/Script/ElementalEncounters"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_ElementalEncountersCharacter_h_113857135(TEXT("/Script/ElementalEncounters"),
 		Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_ElementalEncountersCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_ElementalEncountersCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

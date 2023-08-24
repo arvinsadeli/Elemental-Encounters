@@ -83,7 +83,7 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 	int currentAttackRange;
 	UPROPERTY(BlueprintReadWrite, Category = "Current")
-	int ammoTurn;
+	int currentAmmoTurn;
 
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Status")
 	int fireAmmo;
