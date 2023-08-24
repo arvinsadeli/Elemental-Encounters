@@ -78,7 +78,45 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Status")
 	float damage;
 
+	UPROPERTY(BlueprintReadWrite, Category = "Current")
+	int currentElement1Fire2Air3Earth4Water5Light6Dark;
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+	int currentAttackRange;
+	UPROPERTY(BlueprintReadWrite, Category = "Current")
+	int ammoTurn;
 
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Status")
+	int fireAmmo;
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Status")
+	int airAmmo;
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Status")
+	int earthAmmo;
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Status")
+	int waterAmmo;
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Status")
+	int lightAmmo;
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Status")
+	int darkAmmo;
+
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Status")
+	int fireAttackRange;
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Status")
+	int airAttackRange;
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Status")
+	int earthAttackRange;
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Status")
+	int waterAttackRange;
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Status")
+	int lightAttackRange;
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Status")
+	int darkAttackRange;
+
+	UPROPERTY(BlueprintReadWrite, VisibleInstanceOnly, Category = "Current")
+	TArray<int> elementSlot;
+
+	UPROPERTY(BlueprintReadWrite, VisibleInstanceOnly, Category = "Current")
+	int currentElementSlot;
+	 
 	void SetStatus();
 };
 

@@ -19,13 +19,6 @@ void AGridManager::BeginPlay()
 	Super::BeginPlay();
 
 
-
-
-	maxX = xTileSize - 1;
-	maxY = yTileSize - 1;
-
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("maxX: %d"), maxX));
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("maxY: %d"), maxY));
 }
 
 // Called every frame

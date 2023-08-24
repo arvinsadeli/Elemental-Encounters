@@ -44,6 +44,10 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Status")
 	float damage;
 
+	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Status")
+	int elementFire1Air2Earth3Water4Light5Dark6;
+
+
 	void SetStatus();
 
 };

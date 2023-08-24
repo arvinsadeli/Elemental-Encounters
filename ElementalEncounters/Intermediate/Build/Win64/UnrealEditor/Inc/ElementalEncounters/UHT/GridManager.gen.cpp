@@ -37,14 +37,6 @@ void EmptyLinkFunctionForGeneratedCodeGridManager() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_yTileSize_MetaData[];
 #endif
 		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_yTileSize;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_maxX_MetaData[];
-#endif
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_maxX;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_maxY_MetaData[];
-#endif
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_maxY;
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_GridListTest_Inner;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_GridListTest_MetaData[];
@@ -86,20 +78,6 @@ void EmptyLinkFunctionForGeneratedCodeGridManager() {}
 	};
 #endif
 	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AGridManager_Statics::NewProp_yTileSize = { "yTileSize", nullptr, (EPropertyFlags)0x0010000000000815, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AGridManager, yTileSize), METADATA_PARAMS(Z_Construct_UClass_AGridManager_Statics::NewProp_yTileSize_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGridManager_Statics::NewProp_yTileSize_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGridManager_Statics::NewProp_maxX_MetaData[] = {
-		{ "Category", "GridManager" },
-		{ "ModuleRelativePath", "Public/GridManager.h" },
-	};
-#endif
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AGridManager_Statics::NewProp_maxX = { "maxX", nullptr, (EPropertyFlags)0x0010000000020005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AGridManager, maxX), METADATA_PARAMS(Z_Construct_UClass_AGridManager_Statics::NewProp_maxX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGridManager_Statics::NewProp_maxX_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGridManager_Statics::NewProp_maxY_MetaData[] = {
-		{ "Category", "GridManager" },
-		{ "ModuleRelativePath", "Public/GridManager.h" },
-	};
-#endif
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AGridManager_Statics::NewProp_maxY = { "maxY", nullptr, (EPropertyFlags)0x0010000000020005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AGridManager, maxY), METADATA_PARAMS(Z_Construct_UClass_AGridManager_Statics::NewProp_maxY_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGridManager_Statics::NewProp_maxY_MetaData)) };
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGridManager_Statics::NewProp_GridListTest_Inner = { "GridListTest", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UClass_AGrid_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGridManager_Statics::NewProp_GridListTest_MetaData[] = {
@@ -125,8 +103,6 @@ void EmptyLinkFunctionForGeneratedCodeGridManager() {}
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AGridManager_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGridManager_Statics::NewProp_xTileSize,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGridManager_Statics::NewProp_yTileSize,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGridManager_Statics::NewProp_maxX,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGridManager_Statics::NewProp_maxY,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGridManager_Statics::NewProp_GridListTest_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGridManager_Statics::NewProp_GridListTest,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGridManager_Statics::NewProp_playerStartX,
@@ -169,9 +145,9 @@ void EmptyLinkFunctionForGeneratedCodeGridManager() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_GridManager_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AGridManager, AGridManager::StaticClass, TEXT("AGridManager"), &Z_Registration_Info_UClass_AGridManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGridManager), 1990083464U) },
+		{ Z_Construct_UClass_AGridManager, AGridManager::StaticClass, TEXT("AGridManager"), &Z_Registration_Info_UClass_AGridManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGridManager), 1247137019U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_GridManager_h_4024633468(TEXT("/Script/ElementalEncounters"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_GridManager_h_2779535697(TEXT("/Script/ElementalEncounters"),
 		Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_GridManager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_GridManager_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

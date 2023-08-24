@@ -26,14 +26,9 @@ public:
 
 public:
 	UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category = "Editable")
-	int xTileSize = 5;
+	int xTileSize;
 	UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category = "Editable")
 	int yTileSize;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-	int maxX;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-	int maxY;
 
 	UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category = "Grid Test Nih Woi")
 	TArray<AGrid*> GridListTest;
