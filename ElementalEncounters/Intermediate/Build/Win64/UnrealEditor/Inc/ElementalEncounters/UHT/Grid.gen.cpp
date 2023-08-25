@@ -75,7 +75,7 @@ void EmptyLinkFunctionForGeneratedCodeGrid() {}
 		{ "ModuleRelativePath", "Public/Grid.h" },
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGrid_Statics::NewProp_currentChar = { "currentChar", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AGrid, currentChar), Z_Construct_UClass_ACharacter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGrid_Statics::NewProp_currentChar_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGrid_Statics::NewProp_currentChar_MetaData)) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGrid_Statics::NewProp_currentChar = { "currentChar", nullptr, (EPropertyFlags)0x0010000000020805, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AGrid, currentChar), Z_Construct_UClass_ACharacter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGrid_Statics::NewProp_currentChar_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGrid_Statics::NewProp_currentChar_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AGrid_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGrid_Statics::NewProp_xGridPosition,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGrid_Statics::NewProp_yGridPosition,
@@ -118,9 +118,9 @@ void EmptyLinkFunctionForGeneratedCodeGrid() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_Grid_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AGrid, AGrid::StaticClass, TEXT("AGrid"), &Z_Registration_Info_UClass_AGrid, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGrid), 3639560928U) },
+		{ Z_Construct_UClass_AGrid, AGrid::StaticClass, TEXT("AGrid"), &Z_Registration_Info_UClass_AGrid, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGrid), 790861078U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_Grid_h_1912906962(TEXT("/Script/ElementalEncounters"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_Grid_h_390259735(TEXT("/Script/ElementalEncounters"),
 		Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_Grid_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_Grid_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

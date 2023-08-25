@@ -32,9 +32,9 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Status")
 	int startY;
 
-	UPROPERTY(BlueprintReadWrite, Category = "Status")
+	UPROPERTY(BlueprintReadWrite, VisibleInstanceOnly, Category = "Status")
 	int currentX;
-	UPROPERTY(BlueprintReadWrite, Category = "Status")
+	UPROPERTY(BlueprintReadWrite, VisibleInstanceOnly, Category = "Status")
 	int currentY;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Status")
@@ -47,6 +47,8 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Status")
 	int elementFire1Air2Earth3Water4Light5Dark6;
 
+	UPROPERTY(BlueprintReadWrite, VisibleInstanceOnly, Category = Status)
+	bool isWarning;
 
 	void SetStatus();
 

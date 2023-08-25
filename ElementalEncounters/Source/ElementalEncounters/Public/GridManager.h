@@ -39,5 +39,7 @@ public:
 	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category = "PlayerStatus")
 	int playerStartY;
 
+	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category = "Editable")
+	int turn0Player1Enemy;
 
 };

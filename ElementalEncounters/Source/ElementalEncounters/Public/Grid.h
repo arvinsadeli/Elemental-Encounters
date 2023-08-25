@@ -32,6 +32,6 @@ public:
 	UPROPERTY(EditInstanceOnly,BlueprintReadOnly)
 	int yGridPosition;
 
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite, VisibleInstanceOnly)
 	ACharacter* currentChar;
 };
