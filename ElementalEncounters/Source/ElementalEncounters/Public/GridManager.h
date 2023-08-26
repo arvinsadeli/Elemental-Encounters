@@ -42,4 +42,7 @@ public:
 	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category = "Editable")
 	int turn0Player1Enemy;
 
+	UPROPERTY(BlueprintReadWrite)
+	bool isAllEnemyHasMoved;
+
 };

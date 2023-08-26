@@ -65,6 +65,31 @@ void EmptyLinkFunctionForGeneratedCodeEnemy() {}
 #endif
 		static void NewProp_isWarning_SetBit(void* Obj);
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_isWarning;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_isAlreadyMoved_MetaData[];
+#endif
+		static void NewProp_isAlreadyMoved_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_isAlreadyMoved;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_isCanGoLeft_MetaData[];
+#endif
+		static void NewProp_isCanGoLeft_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_isCanGoLeft;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_isCanGoRight_MetaData[];
+#endif
+		static void NewProp_isCanGoRight_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_isCanGoRight;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_isCanGoUp_MetaData[];
+#endif
+		static void NewProp_isCanGoUp_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_isCanGoUp;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_isCanGoDown_MetaData[];
+#endif
+		static void NewProp_isCanGoDown_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_isCanGoDown;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -147,6 +172,61 @@ void EmptyLinkFunctionForGeneratedCodeEnemy() {}
 		((AEnemy*)Obj)->isWarning = 1;
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_isWarning = { "isWarning", nullptr, (EPropertyFlags)0x0010000000020805, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(AEnemy), &Z_Construct_UClass_AEnemy_Statics::NewProp_isWarning_SetBit, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Statics::NewProp_isWarning_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Statics::NewProp_isWarning_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Statics::NewProp_isAlreadyMoved_MetaData[] = {
+		{ "Category", "Status" },
+		{ "ModuleRelativePath", "Public/Enemy.h" },
+	};
+#endif
+	void Z_Construct_UClass_AEnemy_Statics::NewProp_isAlreadyMoved_SetBit(void* Obj)
+	{
+		((AEnemy*)Obj)->isAlreadyMoved = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_isAlreadyMoved = { "isAlreadyMoved", nullptr, (EPropertyFlags)0x0010000000020805, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(AEnemy), &Z_Construct_UClass_AEnemy_Statics::NewProp_isAlreadyMoved_SetBit, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Statics::NewProp_isAlreadyMoved_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Statics::NewProp_isAlreadyMoved_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoLeft_MetaData[] = {
+		{ "Category", "Enemy" },
+		{ "ModuleRelativePath", "Public/Enemy.h" },
+	};
+#endif
+	void Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoLeft_SetBit(void* Obj)
+	{
+		((AEnemy*)Obj)->isCanGoLeft = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoLeft = { "isCanGoLeft", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(AEnemy), &Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoLeft_SetBit, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoLeft_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoLeft_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoRight_MetaData[] = {
+		{ "Category", "Enemy" },
+		{ "ModuleRelativePath", "Public/Enemy.h" },
+	};
+#endif
+	void Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoRight_SetBit(void* Obj)
+	{
+		((AEnemy*)Obj)->isCanGoRight = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoRight = { "isCanGoRight", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(AEnemy), &Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoRight_SetBit, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoRight_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoRight_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoUp_MetaData[] = {
+		{ "Category", "Enemy" },
+		{ "ModuleRelativePath", "Public/Enemy.h" },
+	};
+#endif
+	void Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoUp_SetBit(void* Obj)
+	{
+		((AEnemy*)Obj)->isCanGoUp = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoUp = { "isCanGoUp", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(AEnemy), &Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoUp_SetBit, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoUp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoUp_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoDown_MetaData[] = {
+		{ "Category", "Enemy" },
+		{ "ModuleRelativePath", "Public/Enemy.h" },
+	};
+#endif
+	void Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoDown_SetBit(void* Obj)
+	{
+		((AEnemy*)Obj)->isCanGoDown = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoDown = { "isCanGoDown", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(AEnemy), &Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoDown_SetBit, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoDown_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoDown_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemy_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_startX,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_startY,
@@ -157,6 +237,11 @@ void EmptyLinkFunctionForGeneratedCodeEnemy() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_damage,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_elementFire1Air2Earth3Water4Light5Dark6,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_isWarning,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_isAlreadyMoved,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoLeft,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoRight,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoUp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_isCanGoDown,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AEnemy_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AEnemy>::IsAbstract,
@@ -195,9 +280,9 @@ void EmptyLinkFunctionForGeneratedCodeEnemy() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_Enemy_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AEnemy, AEnemy::StaticClass, TEXT("AEnemy"), &Z_Registration_Info_UClass_AEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemy), 4079703065U) },
+		{ Z_Construct_UClass_AEnemy, AEnemy::StaticClass, TEXT("AEnemy"), &Z_Registration_Info_UClass_AEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemy), 2823063354U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_Enemy_h_2635952503(TEXT("/Script/ElementalEncounters"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_Enemy_h_901116089(TEXT("/Script/ElementalEncounters"),
 		Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_Enemy_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Project_Elemental_Encounters_ElementalEncounters_Source_ElementalEncounters_Public_Enemy_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

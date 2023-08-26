@@ -47,8 +47,20 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Status")
 	int elementFire1Air2Earth3Water4Light5Dark6;
 
-	UPROPERTY(BlueprintReadWrite, VisibleInstanceOnly, Category = Status)
+	UPROPERTY(BlueprintReadWrite, VisibleInstanceOnly, Category = "Status")
 	bool isWarning;
+
+	UPROPERTY(BlueprintReadWrite, VisibleInstanceOnly, Category = "Status")
+	bool isAlreadyMoved;
+
+	UPROPERTY(BlueprintReadWrite)
+	bool isCanGoLeft;
+	UPROPERTY(BlueprintReadWrite)
+	bool isCanGoRight;
+	UPROPERTY(BlueprintReadWrite)
+	bool isCanGoUp;
+	UPROPERTY(BlueprintReadWrite)
+	bool isCanGoDown;
 
 	void SetStatus();
 

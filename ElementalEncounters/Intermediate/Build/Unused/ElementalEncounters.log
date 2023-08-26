@@ -11,21 +11,18 @@
   [Upgrade] Suppress this message by setting 'IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_2;' in ElementalEncountersEditor.Target.cs.
   [Upgrade] Alternatively you can set this to 'EngineIncludeOrderVersion.Latest' to always use the latest include order. This will potentially cause compile errors when integrating new versions of the engine.
   [Upgrade]
-  [Adaptive Build] Excluded from ElementalEncounters unity file: Enemy.cpp, Grid.cpp, GridManager.cpp
+  [Adaptive Build] Excluded from ElementalEncounters unity file: Enemy.cpp, GridManager.cpp
   Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
     Executing up to 8 processes, one per physical core
-  Building 10 actions with 8 processes...
-  [1/10] Compile [x64] ElementalEncounters.init.gen.cpp
-  [2/10] Compile [x64] GridManager.cpp
-  [3/10] Compile [x64] Enemy.gen.cpp
-  [4/10] Compile [x64] GridManager.gen.cpp
-  [5/10] Compile [x64] Enemy.cpp
-  [6/10] Compile [x64] Grid.gen.cpp
-  [7/10] Compile [x64] Grid.cpp
-  [8/10] Link [x64] UnrealEditor-ElementalEncounters.lib
+    Requested 1.5 GB free memory per action, 5.9 GB available: limiting max parallel actions to 3
+  Building 6 actions with 3 processes...
+  [1/6] Compile [x64] ElementalEncounters.init.gen.cpp
+  [2/6] Compile [x64] Enemy.cpp
+  [3/6] Compile [x64] Enemy.gen.cpp
+  [4/6] Link [x64] UnrealEditor-ElementalEncounters.lib
      Creating library D:\UE 5 Release\Project\Elemental-Encounters\ElementalEncounters\Intermediate\Build\Win64\x64\UnrealEditor\Development\ElementalEncounters\UnrealEditor-ElementalEncounters.lib and object D:\UE 5 Release\Project\Elemental-Encounters\ElementalEncounters\Intermediate\Build\Win64\x64\UnrealEditor\Development\ElementalEncounters\UnrealEditor-ElementalEncounters.exp
-  [9/10] Link [x64] UnrealEditor-ElementalEncounters.dll
+  [5/6] Link [x64] UnrealEditor-ElementalEncounters.dll
      Creating library D:\UE 5 Release\Project\Elemental-Encounters\ElementalEncounters\Intermediate\Build\Win64\x64\UnrealEditor\Development\ElementalEncounters\UnrealEditor-ElementalEncounters.suppressed.lib and object D:\UE 5 Release\Project\Elemental-Encounters\ElementalEncounters\Intermediate\Build\Win64\x64\UnrealEditor\Development\ElementalEncounters\UnrealEditor-ElementalEncounters.suppressed.exp
-  [10/10] WriteMetadata ElementalEncountersEditor.target
-  Total time in Parallel executor: 10.75 seconds
-  Total execution time: 14.33 seconds
+  [6/6] WriteMetadata ElementalEncountersEditor.target
+  Total time in Parallel executor: 2.04 seconds
+  Total execution time: 3.48 seconds
