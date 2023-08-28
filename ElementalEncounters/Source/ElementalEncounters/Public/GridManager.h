@@ -45,4 +45,7 @@ public:
 	UPROPERTY(BlueprintReadWrite)
 	bool isAllEnemyHasMoved;
 
+	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "PlayerStatus")
+	int Rotate1Left2Right3Up4Down;
+
 };
